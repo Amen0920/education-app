@@ -10,6 +10,6 @@ module.exports = {
     'type-empty': [2, 'never'],
     'scope-empty': [2, 'always'],
     'subject-empty': [2, 'never'],
-    'subject-case': [0],
+    'subject-case': [2, 'always', 'lower-case'],
   },
 };
