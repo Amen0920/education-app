@@ -6,7 +6,6 @@
 
 generator client {
   provider = "prisma-client-js"
-  output   = "../generated/prisma"
 }
 
 datasource db {
@@ -18,6 +17,7 @@ model User {
   name          String?
   email         String          @unique
   emailVerified DateTime?
+  hashedPassword String? @map("hashed_password")
   image         String?
   accounts      Account[]
   sessions      Session[]
